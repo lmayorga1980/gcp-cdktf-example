@@ -1,0 +1,12 @@
+{
+  "language": "python",
+  "app": "pipenv run python main.py",
+  "projectId": "65ce604d-4b25-483e-a756-36e2c8a8faf7",
+  "terraformProviders": ["kreuzwerker/docker"],
+  "terraformModules": [],
+  "codeMakerOutput": "imports",
+  "context": {
+  "excludeStackIdFromLogicalIds": "true",
+  "allowSepCharsInLogicalIds": "true"
+  }
+}
