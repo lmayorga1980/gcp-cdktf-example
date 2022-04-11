@@ -1,2 +1,2 @@
-# gcp-cdktf-example
+# cdktf-examples
 Provide a simple GCP cdktf Example

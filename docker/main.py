@@ -8,7 +8,18 @@ class MyStack(TerraformStack):
         super().__init__(scope, ns)
 
         # define resources here
+        DockerProvider(self, "default")
 
+        dockerImage = Image(self, "nginxImage", name = "nginx:latest", keep_locally = False)
+
+        Container(self, "nginxContainer", image =  dockerImage.latest, name = "tutorial",
+        ports = [
+            {
+            'internal' : 80,
+            'external' :8000,
+            }
+            ]
+        )
 
 app = App()
 MyStack(app, "docker")
